@@ -1,6 +1,6 @@
 import { Button, Platform, ScrollView, Text } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { type BeaconTargetInput, getRangingSnapshot, useRanging } from "feja";
+import { type BeaconTargetInput, getRangingSnapshot, useRanging } from "@bvtter/feja";
 import { useState } from "react";
 import { requestForegroundPermissionsAsync } from "expo-location";
 import {
