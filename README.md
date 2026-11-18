@@ -7,22 +7,22 @@ An Expo module for building proximity-aware experiences with BLE beacons on iOS 
 Use `useRanging` to observe the shared native execution and issue commands. Each callback is optional.
 
 ```tsx
-import { useRanging } from 'feja';
-import { Button, Text, View } from 'react-native';
+import { useRanging } from "@bvtter/feja";
+import { Button, Text, View } from "react-native";
 
-const target = { uuid: 'YOUR-BEACON-UUID' };
+const target = { uuid: "YOUR-BEACON-UUID" };
 
 export function BeaconExample() {
   const { snapshot, start, stop } = useRanging({
-    onStarted: (event) => console.log('Started:', event),
-    onReceived: (event) => console.log('Measurements:', event.measurements),
-    onTerminated: (event) => console.log('Terminated:', event),
-    onMeasurementParseError: (event) => console.error('Measurement parse error:', event),
+    onStarted: (event) => console.log("Started:", event),
+    onReceived: (event) => console.log("Measurements:", event.measurements),
+    onTerminated: (event) => console.log("Terminated:", event),
+    onMeasurementParseError: (event) => console.error("Measurement parse error:", event),
   });
 
   return (
     <View>
-      <Text>{snapshot?.state.status ?? 'loading'}</Text>
+      <Text>{snapshot?.state.status ?? "loading"}</Text>
       <Button title="Start" onPress={() => void start(target).catch(console.error)} />
       <Button title="Stop" onPress={() => void stop(target).catch(console.error)} />
     </View>
