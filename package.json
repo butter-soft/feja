@@ -1,6 +1,6 @@
 {
   "name": "@bvtter/feja",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An Expo module for building proximity-aware experiences with BLE beacons on iOS and Android.",
   "keywords": [
     "ble",
