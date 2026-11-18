@@ -1,0 +1,15 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["FejaModule"]
+  },
+  "android": {
+    "modules": ["io.buttersoft.feja.FejaModule"],
+    "projects": [
+      {
+        "name": "feja-domain",
+        "path": "android/domain"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "feja",
+  "version": "0.1.0",
+  "description": "An Expo module for building proximity-aware experiences with BLE beacons on iOS and Android.",
+  "keywords": [
+    "ble",
+    "bluetooth",
+    "expo",
+    "feja",
+    "react-native"
+  ],
+  "homepage": "https://github.com/butter-soft/feja#readme",
+  "bugs": {
+    "url": "https://github.com/butter-soft/feja/issues"
+  },
+  "license": "MIT",
+  "author": "Jung Wook Park <jwpark@buttersoft.io> (https://github.com/hatchling13)",
+  "repository": "https://github.com/butter-soft/feja",
+  "files": [
+    "build",
+    "expo-module.config.json",
+    "android/build.gradle",
+    "android/src/main",
+    "android/domain/build.gradle.kts",
+    "android/domain/src/main",
+    "ios/Feja.podspec",
+    "ios/FejaModule.swift",
+    "ios/Beacon",
+    "ios/CoreLocation",
+    "ios/Expo",
+    "ios/Functional",
+    "ios/LocationAuthorization",
+    "ios/Ranging",
+    "CHANGELOG.md"
+  ],
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "node scripts/clean.ts",
+    "lint": "oxlint src/",
+    "lint:fix": "oxlint --fix src/",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "pnpm clean && pnpm build"
+  },
+  "dependencies": {
+    "effect": "^4.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "~19.3.0",
+    "babel-preset-expo": "~58.0.22",
+    "expo": "^58.0.21",
+    "oxlint": "^1.93.0",
+    "oxlint-tsgolint": "^7.0.2007",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "typescript": "~6.0.3",
+    "vitest": "^5.1.0"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "^19.2.0",
+    "react-native": "*"
+  },
+  "packageManager": "pnpm@11.28.12"
+}

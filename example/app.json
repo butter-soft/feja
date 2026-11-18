@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Feja Example",
+    "slug": "feja-example",
+    "version": "1.0.0",
+    "ios": {
+      "bundleIdentifier": "io.buttersoft.feja.example",
+      "appleTeamId": "N9D6FFLRS8"
+    },
+    "android": {
+      "package": "io.buttersoft.feja.example"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Feja Example to detect nearby beacons.",
+          "locationAlwaysAndWhenInUsePermission": "Allow Feja Example to detect nearby beacons in the background.",
+          "isIosBackgroundLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
